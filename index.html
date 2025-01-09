@@ -591,7 +591,10 @@
             <div class="media-container-row">
                 <div class="col-sm-6 copyright">
                     <p class="mbr-text mbr-fonts-style display-7">
-                        © 2024&nbsp;<strong>Piper I/O EOOD</strong> - All Rights Reserved
+                        © <span id="currentYear"></span> <strong>Piper I/O EOOD</strong> - All Rights Reserved
+                        <script>
+                          document.getElementById("currentYear").textContent = new Date().getFullYear();
+                        </script>
                     </p>
                 </div>
                 <div class="col-md-6">
